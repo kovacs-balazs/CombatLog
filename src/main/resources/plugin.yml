@@ -1,0 +1,9 @@
+name: CombatLog
+version: '${project.version}'
+main: me.koba1.combatlog.Main
+api-version: 1.18
+authors: [ kbalu ]
+description: CombatLog for pvp
+
+commands:
+  test:
