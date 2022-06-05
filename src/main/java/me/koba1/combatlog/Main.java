@@ -11,15 +11,16 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public final class Main extends JavaPlugin {
 
 
-    public static HashMap<Player, BarAPI> apis;
+    public static ArrayList<Player> inPvp;
     @Override
     public void onEnable() {
-        apis = new HashMap<>();
+        inPvp = new ArrayList<>();
         // Plugin startup logic
         PlayerData.setup();
 

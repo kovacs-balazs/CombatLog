@@ -9,5 +9,5 @@ Timer: 10
 
 # Messages
 pvp_message: '&8[&eCombatLog&8] &7You are now in combat!'
-bossbar_message: '&7You are now in combat! Do not log out for &a%time% seconds&7!'
+action_bar_message: '&7You are now in combat! Do not log out for &a%time% seconds&7!'
 no_longer_message: '&8[&eCombatLog&8] &7You are no longer in combat!'

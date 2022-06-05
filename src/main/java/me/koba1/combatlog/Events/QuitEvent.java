@@ -16,6 +16,6 @@ public class QuitEvent implements Listener {
             e.getPlayer().setHealth(0.0D);
         }
         TimeManager.removePvp(e.getPlayer());
-        Main.apis.remove(e.getPlayer());
+        Main.inPvp.remove(e.getPlayer());
     }
 }

@@ -11,6 +11,6 @@ public class JoinEvent implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         TimeManager.removePvp(e.getPlayer());
-        Main.apis.remove(e.getPlayer());
+        Main.inPvp.remove(e.getPlayer());
     }
 }

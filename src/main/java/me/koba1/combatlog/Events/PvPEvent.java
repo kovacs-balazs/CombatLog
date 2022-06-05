@@ -20,7 +20,7 @@ public class PvPEvent implements Listener {
                 Player damager = (Player) e.getDamager();
                 Player p = (Player) e.getEntity();
 
-                if(Main.apis.isEmpty()) {
+                if(Main.inPvp.isEmpty()) {
                     damager.sendMessage(ChatColor.translateAlternateColorCodes('&', m.getConfig().getString("pvp_message")));
                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', m.getConfig().getString("pvp_message")));
 
@@ -29,11 +29,11 @@ public class PvPEvent implements Listener {
                     return;
                 }
 
-                if(Main.apis.get(damager) == null) {
+                if(!Main.inPvp.contains(damager)) {
                     damager.sendMessage(ChatColor.translateAlternateColorCodes('&', m.getConfig().getString("pvp_message")));
                 }
 
-                if(Main.apis.get(p) == null) {
+                if(!Main.inPvp.contains(p)) {
                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', m.getConfig().getString("pvp_message")));
                 }
 
